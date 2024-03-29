@@ -1,0 +1,2890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @media (min-width:1024px) and (max-width:1920px) {
+
+            /* Style the links inside the sidenav */
+            #mySidenav a {
+                position: absolute;
+                right: -170px;
+                transition: 0.5s;
+                padding: 10px;
+                width: 200px;
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                border-radius: 5px 0px 0px 5px;
+                text-align: start;
+                font-size: small;
+            }
+
+            #mySidenav a:hover {
+                right: 0;
+                /* On mouse-over, make the elements appear as they should */
+            }
+
+            /* The about link: 20px from the top with a green background */
+            #about {
+                top: 100px;
+                background-color: rgb(65, 60, 60, 0.9);
+            }
+
+            #blog {
+                top: 160px;
+                background-color: rgb(65, 60, 60, 0.9);
+                /* Blue */
+            }
+
+            /* Header Portion */
+            .navbar-brand {
+                margin-left: 30px;
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+                font-size: 12px;
+                font-family: Montserrat;
+            }
+
+            .nav-item {
+                margin-right: 20px;
+            }
+
+            .nav-link {
+                color: white;
+            }
+
+            #btn1 {
+                width: 130px;
+                margin-right: 30px;
+            }
+
+            
+
+
+
+            /* Row 1 */
+
+
+            #row1 {
+                padding-top: 220px;
+                text-align: start;
+                padding-left: 200px;
+                padding-bottom: 50px;
+
+            }
+
+            #heading {
+                color: #C0812A;
+            }
+
+            #paragraph {
+                color: #707070;
+            }
+
+            #btn2 {
+                color: white;
+                background-color: #86837f;
+                font-size: small;
+                width: auto;
+                height: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+
+            }
+
+            #btn2 :hover {
+                background-color: B0ABA4;
+            }
+
+            #row1img {
+                width: 700px;
+            }
+
+            #row1i {
+                padding-top: 100px;
+                padding-bottom: 70px;
+
+
+            }
+
+            /* Row 2 */
+
+            #row2m {
+                background-color: #F5F0E9;
+                padding-bottom: 120px;
+            }
+
+            #row2 {
+                text-align: center;
+                padding-top: 80px;
+                background-color: #F5F0E9;
+                padding-bottom: 30px;
+            }
+
+            #r2head {
+                color: #C0812A;
+                padding-bottom: 20px;
+            }
+
+            #r2para {
+                color: #857070;
+            }
+
+            #r2col1 {
+                background-color: #F5F0E9;
+                padding-left: 120px;
+
+            }
+
+            #r2col2 {
+                background-color: #F5F0E9;
+                padding-left: 70px;
+            }
+
+            #r2col3 {
+                background-color: #F5F0E9;
+            }
+
+            .card {
+                width: 380px;
+            }
+
+            #r2btn {
+                width: 300px;
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: small;
+                font-weight: bold;
+            }
+
+            .card-body {
+                text-align: center;
+            }
+
+            .card h6 {
+                padding-top: 20px;
+            }
+
+            .card-body p {
+                color: #857070;
+            }
+
+            .inner {
+                overflow: hidden;
+            }
+
+            .inner img {
+                transition: all 1.5s ease;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .inner:hover img {
+                transform: scale(1.5);
+
+            }
+
+            /* Row 3 */
+            #row3i {
+                width: 362px;
+                height: 450px;
+            }
+
+            #row3 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid lightgray;
+            }
+
+            /* Row 4 */
+            #row4 {
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom: 100px;
+
+            }
+
+            #row4 h1 {
+                color: #C0812A;
+            }
+
+            #row4 p {
+                color: #707070;
+            }
+
+            /* Row5 */
+
+            .flex-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+
+            }
+
+            #fi-1 {
+                background-color: white;
+                border-bottom: 2px solid #F4F4F4;
+                border-right: 2px solid #F4F4F4;
+            }
+
+            #fi-2 {
+                background-color: white;
+                border-bottom: 2px solid #F4F4F4;
+                border-left: 2px solid #F4F4F4;
+            }
+
+            .flex-item {
+                width: 180px;
+                height: 60px;
+                background-color: #F4F4F4;
+                padding-top: 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                font-size: small;
+
+            }
+
+            .flex-item:hover {
+                background-color: white;
+                border-top: 2px solid #F4F4F4;
+                border-left: 2px solid #F4F4F4;
+                border-right: 2px solid #F4F4F4;
+                border-bottom: 1px solid white;
+
+
+            }
+
+            #fi-1:hover {
+                background-color: white;
+                border-top: 2px solid white;
+                border-left: 2px solid white;
+            }
+
+            #fi-2:hover {
+                background-color: white;
+                border-top: 2px solid white;
+                border-right: 2px solid white;
+            }
+
+            /* Row 6 */
+            #row6img {
+                width: 480px;
+
+            }
+
+            #row6 {
+                padding-top: 30px;
+                padding-bottom: 120px;
+            }
+
+            #r6c1 {
+
+                text-align: end;
+            }
+
+            #r6c2 {
+                color: #707070;
+                padding-left: 100px;
+            }
+
+
+            /* Row 8 */
+
+            #row8 {
+                background-color: #F5F0E9;
+                padding-top: 150px;
+                padding-bottom: 150px;
+
+            }
+
+            #row8c {
+                width: 300px;
+                text-align: center;
+            }
+
+            #row8c P {
+                color: #86837f;
+            }
+
+            /* Row 9 */
+            #Row9 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #Row9 img {
+                padding-left: 570px;
+
+            }
+
+            #Row9 p {
+                font-size: x-large;
+                padding-top: 30px;
+                color: #707070;
+            }
+
+            /* Row 10 */
+            #Row10c1 {
+                background-color: #C0812A;
+                padding-left: 100px;
+                padding-top: 150px;
+                color: white;
+                padding-bottom: 100px;
+            }
+
+            #Row10c1 p {
+                font-size: large;
+            }
+
+            #Row10R {
+                padding-top: 30px;
+            }
+
+            #Row10c {
+                padding-right: 30px;
+            }
+
+            #Row10c2 {
+                padding-right: 250px;
+            }
+
+            #r10img {
+
+                /* background-image: url(assets/Row10.jpg); */
+                background-image: url(assets/Row10.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                /* Optionally, you can set a fixed height to the container */
+                height: 100vh;
+                /* Adjust as needed */
+
+            }
+
+            /* Row 11 */
+
+            #Row11 {
+                padding-top: 80px;
+                padding-bottom: 80px;
+                background-color: #F5F0E9;
+            }
+
+            #row11r1 {
+                text-align: center;
+            }
+
+            #row11r1 h1 {
+                color: #C0812A;
+            }
+
+            #row11r1 p {
+                padding-left: 400px;
+                padding-right: 300px;
+                padding-top: 20px;
+                color: #86837f;
+            }
+
+            #Row11r2r2 {
+                padding-top: 30px;
+            }
+
+            #Row11r2 {
+                padding-top: 30px;
+            }
+
+            #r11c1 {
+                padding-left: 200px;
+            }
+
+            #r11c2 {
+                padding-left: 30px;
+            }
+
+            #rowi {
+                width: 300px;
+                height: 300px;
+
+            }
+
+            #rowt {
+                text-align: center;
+                background-color: white;
+                margin-left: 70px;
+                padding-top: 70px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #rowt h6 {
+                text-align: start;
+                padding-left: 40px;
+            }
+
+            #rowt p {
+                color: #707070;
+                padding-left: 40px;
+                padding-right: 30px;
+                text-align: start;
+                font-size: small;
+            }
+
+            #p2 {
+                color: #C0812A;
+                font-size: medium;
+                padding-right: 20px;
+            }
+
+            #rowi1 {
+                width: 280px;
+                height: 300px;
+                margin-left: 20px;
+            }
+
+            #rowt2 {
+                text-align: center;
+                background-color: white;
+                padding-top: 70px;
+                margin-left: -60px;
+                width: 280px;
+                height: 300px;
+            }
+
+            #rowt2 h6 {
+                text-align: start;
+                padding-left: 40px;
+            }
+
+            #rowt2 p {
+                color: #707070;
+                padding-left: 40px;
+                padding-right: 30px;
+                text-align: start;
+                font-size: small;
+            }
+
+            /* Row 12 */
+
+            #r12i {
+                border-radius: 90px;
+                width: 100px;
+                height: 100px;
+            }
+
+            #Row12 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #r12c1 {
+                padding-left: 300px;
+            }
+
+            #r11c1t p {
+                text-align: center;
+                font-size: small;
+                padding-left: 200px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t p b {
+                color: #0B0F14;
+            }
+
+            #row12c2 {
+                text-align: center;
+            }
+
+            #r11c1t1 p {
+                text-align: center;
+                font-size: small;
+                padding-left: 120px;
+                padding-right: 100px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t1 p b {
+                color: #0B0F14;
+            }
+
+            #row12c3 {
+                padding-left: 80px;
+            }
+
+            #r11c1t2 p {
+                text-align: center;
+                font-size: small;
+                padding-left: 30px;
+                padding-right: 200px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t2 p b {
+                color: #0B0F14;
+            }
+
+            /* Row 13 */
+            #flexcontainer {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(40, 40, 40, 0.6)), url(assets/Row13.jpg);
+            }
+
+            #flexcontainer div {
+                background-color: rgba(0, 0, 0, 0.8);
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+                margin-left: 30px;
+                width: 400px;
+                height: 300px;
+            }
+
+            #flexcontainer div p {
+                padding-left: 50px;
+                padding-right: 60px;
+                color: #707070;
+            }
+
+            #flexcontainer div h4 {
+                color: #C0812A;
+            }
+
+            #flexcontainer div h6 {
+                color: white;
+                font-size: medium;
+            }
+
+            /* Row 14 */
+            #Row14 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #Row14 p {
+                color: #707070;
+            }
+
+            #r14c1 {
+                text-align: center;
+                padding-left: 120px;
+            }
+
+            #r14c2 {
+                text-align: center;
+                padding-right: 20px;
+            }
+
+            #r14c3 {
+                text-align: center;
+                padding-right: 20px;
+            }
+
+            #r14c4 {
+                text-align: center;
+                padding-right: 220px;
+            }
+
+            /* Row 15 */
+            #Row15i {
+                background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(assets/Row15.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            #Row15c {
+                background-color: #C0812A;
+                color: white;
+                padding-top: 80px;
+                padding-left: 90px;
+                padding-right: 120px;
+            }
+
+            #Row15c h1 {
+                font-size: 55px;
+
+            }
+
+            #Row15c p {
+                font-size: large;
+            }
+
+            #name {
+                width: 400px;
+                height: 65px;
+            }
+
+            #email {
+                width: 400px;
+                height: 65px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #Row15c button {
+                margin-bottom: 120px;
+                margin-top: 10px;
+                background-color: #DFB752;
+                width: 200px;
+                height: 50px;
+            }
+
+            #Row15c button:hover {
+                color: black;
+                background-color: rgb(216, 179, 85);
+
+            }
+
+            /* Row 16 */
+            #Row16 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                text-align: center;
+            }
+
+            #logo {
+                color: #C0812A;
+                font-size: 35px;
+                padding-bottom: 20px;
+            }
+
+            #r16c1 {
+
+                padding-left: 190px;
+                padding-right: 50px;
+            }
+
+            #Row16 p {
+                color: #707070;
+            }
+
+            #r16c2 {
+                padding-left: 69px;
+
+            }
+
+            #r16c4 {
+                padding-right: 100px;
+            }
+
+            /* Row 17 */
+            #Row17 {
+                width: 100%;
+                height: 100%;
+            }
+
+            #map {
+                width: 1500px;
+                height: 500px;
+                border: 0;
+            }
+
+            /* footer */
+
+            #fc1 {
+                text-align: center;
+                padding-top: 30px;
+
+            }
+
+            #fborder {
+                border-bottom: 1px solid #E5E5E5;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            #fr2 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                text-align: center;
+                color: #707070;
+            }
+
+            #fr2c1 {
+
+                font-size: 14px;
+
+                text-align: center;
+
+
+            }
+
+            #fr2c2 {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            #fr2c3 {
+                font-size: 14px;
+                text-align: center;
+
+                letter-spacing: 10px;
+            }
+
+
+        }
+
+        @media(min-width:650px) and (max-width:768px) {
+
+            /* Style the links inside the sidenav */
+            #mySidenav a {
+                position: absolute;
+                right: -165px;
+                transition: 0.5s;
+                padding: 10px;
+                width: 200px;
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                border-radius: 5px 0px 0px 5px;
+                text-align: start;
+                font-size: small;
+            }
+
+            #mySidenav a:hover {
+                right: 0;
+                /* On mouse-over, make the elements appear as they should */
+            }
+
+            /* The about link: 20px from the top with a green background */
+            #about {
+                top: 100px;
+                background-color: rgb(65, 60, 60, 0.9);
+            }
+
+            #blog {
+                top: 160px;
+                background-color: rgb(65, 60, 60, 0.9);
+            }
+
+            /* Header Portion */
+            .navbar-brand {
+                margin-left: 30px;
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+                font-size: 12px;
+                font-family: Montserrat;
+                margin-top: 30px;
+                background-color: rgba(11, 15, 20, 0.2);
+                line-height: 2.8;
+                padding-left: 30px;
+
+            }
+
+            .nav-item {
+                margin-right: 20px;
+            }
+
+            .nav-link {
+                color: white;
+            }
+
+            #btn1 {
+                width: 130px;
+                margin-right: 30px;
+            }
+
+            .navbar-toggler {
+                margin-right: 20px;
+                color: black;
+
+            }
+
+            #bottb {
+                border-bottom: 2px solid #27282C;
+
+            }
+
+            /* Row 1 */
+
+
+            #row1 {
+                padding-top: 220px;
+                text-align: start;
+
+                padding-bottom: 50px;
+
+            }
+
+            #heading {
+                color: #C0812A;
+            }
+
+            #paragraph {
+                color: #707070;
+            }
+
+            #btn2 {
+                color: white;
+                background-color: #86837f;
+                font-size: small;
+                width: auto;
+                height: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+
+            }
+
+            #btn2 :hover {
+                background-color: B0ABA4;
+            }
+
+            #row1img {
+                width: 370px;
+                padding-top: 120px;
+            }
+
+            #row1i {
+                padding-top: 100px;
+
+
+            }
+
+            /* Row 2 */
+
+            #row2m {
+                background-color: #F5F0E9;
+                padding-bottom: 120px;
+            }
+
+            #row2 {
+                text-align: center;
+                padding-top: 80px;
+                background-color: #F5F0E9;
+                padding-bottom: 30px;
+            }
+
+            #r2head {
+                color: #C0812A;
+                padding-bottom: 20px;
+            }
+
+            #r2para {
+                color: #857070;
+            }
+
+            #r2col1 {
+                background-color: #F5F0E9;
+
+
+            }
+
+            #r2col2 {
+                background-color: #F5F0E9;
+
+
+            }
+
+
+            #r2col3 {
+                background-color: #F5F0E9;
+
+            }
+
+
+
+            .card {
+                width: 220px;
+                border: 1px solid #F5F0E9;
+            }
+
+            #r2btn {
+                width: 180px;
+                margin-top: 20px;
+                font-size: small;
+                font-weight: bold;
+            }
+
+            .card-body {
+                text-align: center;
+                font-size: medium;
+            }
+
+            .card h6 {
+                padding-top: 20px;
+            }
+
+            .card-body p {
+                color: #857070;
+            }
+
+            .inner {
+                overflow: hidden;
+            }
+
+            .inner img {
+                transition: all 1.5s ease;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .inner:hover img {
+                transform: scale(1.5);
+                opacity: 0.3;
+
+
+            }
+
+            /* Row 3 */
+            #row3i {
+                width: 365px;
+                height: 450px;
+                padding-bottom: 40px;
+            }
+
+            #row3 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            /* Row 4 */
+            #row4 {
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom: 100px;
+
+            }
+
+            #row4 h1 {
+                color: #C0812A;
+            }
+
+            #row4 p {
+                color: #707070;
+            }
+
+            /* Row5 */
+
+            .flex-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+
+            }
+
+            #fi-1 {
+                background-color: white;
+                border-bottom: 2px solid #F4F4F4;
+                border-right: 2px solid #F4F4F4;
+            }
+
+            #fi-2 {
+                background-color: white;
+                border-bottom: 2px solid #F4F4F4;
+                border-left: 2px solid #F4F4F4;
+            }
+
+            .flex-item {
+                width: 180px;
+                height: 60px;
+                background-color: #F4F4F4;
+                padding-top: 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                font-size: small;
+
+            }
+
+            .flex-item:hover {
+                background-color: white;
+                border-top: 2px solid #F4F4F4;
+                border-left: 2px solid #F4F4F4;
+                border-right: 2px solid #F4F4F4;
+                border-bottom: 1px solid white;
+
+
+            }
+
+            #fi-1:hover {
+                background-color: white;
+                border-top: 2px solid white;
+                border-left: 2px solid white;
+            }
+
+            #fi-2:hover {
+                background-color: white;
+                border-top: 2px solid white;
+                border-right: 2px solid white;
+            }
+
+
+            /* Row 6 */
+            #row6img {
+                width: 300px;
+
+            }
+
+            #row6 {
+                padding-top: 30px;
+                padding-bottom: 100px;
+            }
+
+            #r6c1 {
+
+                text-align: end;
+            }
+
+            #r6c2 {
+                color: #707070;
+
+            }
+
+            /* Row 7
+            #row7{
+                width: auto;
+                height: auto;
+            } */
+
+            /* Row 8 */
+
+            #row8 {
+                background-color: #F5F0E9;
+                padding-top: 150px;
+                padding-bottom: 150px;
+
+            }
+
+            #row8c {
+                width: 350px;
+                text-align: center;
+                padding-left: 50px;
+            }
+
+            #row8c P {
+                color: #86837f;
+            }
+
+            /* Row 9 */
+            #Row9 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #Row9 img {
+                padding-left: 200px;
+
+            }
+
+            #Row9 p {
+                font-size: x-large;
+                padding-top: 30px;
+                color: #707070;
+            }
+
+            /* Row 10 */
+            #Row10c1 {
+                background-color: #C0812A;
+                padding-left: 50px;
+                padding-top: 150px;
+                color: white;
+                padding-bottom: 100px;
+            }
+
+
+
+            #Row10R {
+                padding-top: 30px;
+            }
+
+            #Row10c {
+                padding-right: 30px;
+                font-size: small;
+            }
+
+            #Row10c h4 {
+                font-size: large;
+            }
+
+            #Row10c2 {
+
+                font-size: large;
+            }
+
+            #r10img {
+
+                /* background-image: url(assets/Row10.jpg);
+                width: 800px;
+                height: 700px; */
+                /* background-image: url(assets/Row10.jpg); */
+                background-image: url(assets/Row10.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                /* Optionally, you can set a fixed height to the container */
+                height: 100vh;
+                /* Adjust as needed */
+
+            }
+
+            /* Row 11 */
+
+            #Row11 {
+                padding-top: 80px;
+                padding-bottom: 80px;
+                background-color: #F5F0E9;
+            }
+
+            #row11r1 {
+                text-align: center;
+            }
+
+            #row11r1 h1 {
+                color: #C0812A;
+            }
+
+            #row11r1 p {
+                padding-left: 10px;
+
+                padding-top: 20px;
+                color: #86837f;
+            }
+
+            #Row11r2r2 {
+                padding-top: 30px;
+            }
+
+            #Row11r2 {
+                padding-top: 30px;
+            }
+
+            #r11c1 {
+                padding-left: 20px;
+            }
+
+            #r11col2 {
+                padding-top: 30px;
+            }
+
+            #r11c2 {
+                padding-left: 20px;
+            }
+
+            #rowi {
+                width: 360px;
+                height: 360px;
+
+            }
+
+            #rowt {
+                text-align: center;
+                background-color: white;
+
+                padding-top: 100px;
+                width: 360px;
+                height: 360px;
+            }
+
+            #rowt h6 {
+                text-align: start;
+                padding-left: 40px;
+            }
+
+            #rowt p {
+                color: #707070;
+                padding-left: 40px;
+                padding-right: 30px;
+                text-align: start;
+                font-size: small;
+            }
+
+            #p2 {
+                color: #C0812A;
+                font-size: medium;
+                padding-right: 20px;
+            }
+
+            #rowi1 {
+                width: 360px;
+                height: 360px;
+
+            }
+
+            #rowt2 {
+                text-align: center;
+                background-color: white;
+                padding-top: 100px;
+
+                width: 360px;
+                height: 360px;
+            }
+
+            #rowt2 h6 {
+                text-align: start;
+                padding-left: 40px;
+            }
+
+            #rowt2 p {
+                color: #707070;
+                padding-left: 40px;
+                padding-right: 30px;
+                text-align: start;
+                font-size: small;
+            }
+
+            /* Row 12 */
+
+            #r12i {
+                border-radius: 90px;
+                width: 100px;
+                height: 100px;
+            }
+
+            #Row12 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #r12c1 {
+                padding-left: 50px;
+            }
+
+            #r11c1t p {
+                text-align: center;
+                font-size: small;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t p b {
+                color: #0B0F14;
+            }
+
+            #row12c2 {
+                text-align: center;
+            }
+
+            #r11c1t1 p {
+                text-align: center;
+                font-size: small;
+                padding-left: 30px;
+                padding-right: 20px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t1 p b {
+                color: #0B0F14;
+            }
+
+            #row12c3 {
+                padding-left: 80px;
+            }
+
+            #r11c1t2 p {
+                text-align: center;
+                font-size: small;
+                padding-left: 30px;
+                padding-right: 20px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t2 p b {
+                color: #0B0F14;
+            }
+
+            /* Row 13 */
+            #flexcontainer {
+                height: 100%;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background: radial-gradient(rgba(17, 17, 17, 0.7), rgba(40, 40, 40, 0.6)), url(assets/Row13.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #flexcontainer div {
+                background-color: rgba(0, 0, 0, 0.8);
+                padding-top: 50px;
+
+                padding-bottom: 50px;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 20px;
+                width: 710px;
+                height: 200px;
+            }
+
+            #flexcontainer div p {
+                padding-left: 120px;
+                padding-right: 80px;
+                color: #707070;
+            }
+
+            #flexcontainer div h4 {
+                color: #C0812A;
+            }
+
+            #flexcontainer div h6 {
+                color: white;
+                font-size: medium;
+            }
+
+            /* Row 14 */
+            #Row14 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #Row14 p {
+                color: #707070;
+            }
+
+            #r14c1 {
+                text-align: center;
+
+            }
+
+            #r14c2 {
+                text-align: center;
+
+
+            }
+
+            #r14c3 {
+                text-align: center;
+                padding-top: 50px;
+
+            }
+
+            #r14c4 {
+                text-align: center;
+                padding-top: 50px;
+
+            }
+
+            /* Row 15 */
+            #Row15i {
+                background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(assets/Row15.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 770px;
+                height: 500px;
+
+            }
+
+            #Row15c {
+                background-color: #C0812A;
+                color: white;
+                padding-top: 80px;
+                padding-left: 90px;
+                padding-right: 100px;
+            }
+
+            #Row15c h1 {
+                font-size: 55px;
+
+            }
+
+            #Row15c p {
+                font-size: medium;
+            }
+
+            #name {
+                width: 500px;
+                height: 65px;
+            }
+
+            #email {
+                width: 500px;
+                height: 65px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #Row15c button {
+                margin-bottom: 120px;
+                margin-top: 10px;
+                background-color: #DFB752;
+                width: 200px;
+                height: 50px;
+            }
+
+            #Row15c button:hover {
+                color: black;
+                background-color: rgb(216, 179, 85);
+
+            }
+
+
+            /* Row 16 */
+            #Row16 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                text-align: center;
+            }
+
+            #logo {
+                color: #C0812A;
+                font-size: 35px;
+                padding-bottom: 20px;
+            }
+
+
+
+            #Row16 p {
+                color: #707070;
+            }
+
+            /* Row 17 */
+            #Row17 {
+                width: 100%;
+                height: 100%;
+            }
+
+            #map {
+                width: 750px;
+                height: 500px;
+                border: 0;
+            }
+
+            /* footer */
+
+            #fc1 {
+                text-align: center;
+                padding-top: 30px;
+
+            }
+
+            #fborder {
+                border-bottom: 1px solid #E5E5E5;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            #fr2 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                text-align: center;
+                color: #707070;
+            }
+
+            #fr2c1 {
+
+                font-size: 14px;
+                text-align: center;
+                padding-bottom: 30px;
+
+
+            }
+
+            #fr2c2 {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            #fr2c3 {
+                font-size: 14px;
+                text-align: center;
+                letter-spacing: 25px;
+            }
+
+        }
+
+        @media (min-width:320px) and (max-width:426px) {
+
+            /* Header Portion */
+            .navbar-brand {
+                padding-left: 30px;
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+                font-size: 12px;
+                font-family: Montserrat;
+                margin-top: 30px;
+                background-color: #0B0F14;
+                line-height: 2.8;
+                padding-left: 30px;
+
+            }
+
+            .nav-item {
+                margin-right: 20px;
+            }
+
+            .nav-link {
+                color: white;
+            }
+
+            #btn1 {
+                width: 130px;
+                margin-right: 30px;
+            }
+
+            .navbar-toggler {
+                margin-right: 20px;
+                color: black;
+
+            }
+
+            #bottb {
+                border-bottom: 2px solid #27282C;
+            }
+
+            /* Row 1 */
+
+
+            #row1 {
+                padding-top: 60px;
+                text-align: center;
+
+            }
+
+            #heading {
+                color: #C0812A;
+            }
+
+            #paragraph {
+                color: #707070;
+            }
+
+            #btn2 {
+                color: white;
+                background-color: #86837f;
+                font-size: small;
+                width: auto;
+                height: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+
+            }
+
+            #btn2 :hover {
+                background-color: B0ABA4;
+            }
+
+            #row1img {
+                width: 370px;
+
+            }
+
+            #row1i {
+                padding-top: 100px;
+                padding-bottom: 30px;
+
+
+            }
+
+            /* Row 2 */
+
+            #row2m {
+                background-color: #F5F0E9;
+                padding-bottom: 120px;
+            }
+
+            #row2 {
+                text-align: center;
+                padding-top: 80px;
+                background-color: #F5F0E9;
+                padding-bottom: 30px;
+            }
+
+            #r2head {
+                color: #C0812A;
+                padding-bottom: 20px;
+            }
+
+            #r2para {
+                color: #857070;
+            }
+
+            #r2col1 {
+                background-color: #F5F0E9;
+                padding-bottom: 40px;
+
+            }
+
+            #r2col2 {
+                background-color: #F5F0E9;
+                padding-bottom: 40px;
+            }
+
+            #r2col3 {
+                background-color: #F5F0E9;
+            }
+
+            .card {
+                width: 400px;
+                border: 1px solid #F5F0E9;
+            }
+
+            #r2btn {
+                width: 180px;
+                margin-top: 20px;
+                font-size: small;
+                font-weight: bold;
+            }
+
+            .card-body {
+                text-align: center;
+                font-size: medium;
+            }
+
+            .card h6 {
+                padding-top: 20px;
+            }
+
+            .card-body p {
+                color: #857070;
+            }
+
+            .inner {
+                overflow: hidden;
+            }
+
+            .inner img {
+                transition: all 1.5s ease;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .inner:hover img {
+                transform: scale(1.5);
+
+            }
+
+            /* Row 3 */
+            #row3i {
+                width: 395px;
+                height: 450px;
+                padding-bottom: 40px;
+                padding-left: 10px;
+            }
+
+            #row3 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            /* Row 4 */
+            #row4 {
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom: 100px;
+
+            }
+
+            #row4 h1 {
+                color: #C0812A;
+            }
+
+            #row4 p {
+                color: #707070;
+            }
+
+            /* Row5 */
+
+            .flex-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+
+            }
+
+            #fi-1 {
+                background-color: white;
+                border: 1px solid white;
+            }
+
+            #fi-2 {
+                background-color: white;
+                border: 1px solid white;
+            }
+
+            .flex-item {
+                width: 380px;
+                height: 60px;
+                background-color: #F4F4F4;
+                padding-top: 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                font-size: small;
+                border: 1px solid #e9e0e0;
+
+            }
+
+            .flex-item:hover {
+                background-color: white;
+                border-top: 2px solid #F4F4F4;
+                border-left: 2px solid #F4F4F4;
+                border-right: 2px solid #F4F4F4;
+                border-bottom: 1px solid #e9e0e0;
+
+
+            }
+
+            #fi-1:hover {
+                background-color: white;
+                border-top: 2px solid white;
+                border-left: 2px solid white;
+            }
+
+            #fi-2:hover {
+                background-color: white;
+                border-top: 2px solid white;
+                border-right: 2px solid white;
+            }
+
+            /* Row 6 */
+            #row6img {
+                width: 400px;
+
+            }
+
+            #row6 {
+                padding-top: 30px;
+                padding-bottom: 80px;
+            }
+
+
+
+            #r6c2 {
+                padding-top: 30px;
+                color: #707070;
+
+            }
+
+            /* Row 8 */
+
+            #row8 {
+                background-color: #F5F0E9;
+                padding-top: 150px;
+                padding-bottom: 150px;
+
+            }
+
+            #row8c {
+                width: 350px;
+                text-align: center;
+                padding-left: 50px;
+            }
+
+            #row8c P {
+                color: #86837f;
+            }
+
+            /* Row 9 */
+            #Row9 {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+            }
+
+
+
+            #Row9 p {
+                font-size: x-large;
+                padding-top: 30px;
+                color: #707070;
+            }
+
+            /* Row 10 */
+            #Row10c1 {
+                background-color: #C0812A;
+
+                padding-top: 40px;
+                padding-left: 30px;
+                color: white;
+                padding-bottom: 100px;
+            }
+
+            #Row10c1 p {
+                font-size: small;
+            }
+
+            #Row10c {
+                padding-right: 30px;
+                padding-top: 30px;
+            }
+
+
+
+            #Row10c2 p {
+                font-size: medium;
+            }
+
+
+
+            #r10img {
+
+                /* background-image: url(assets/Row10.jpg);
+                max-width: 100vh;
+                height: 100vh; */
+                /* background-image: url(assets/Row10.jpg); */
+                background-image: url(assets/Row10.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                /* Optionally, you can set a fixed height to the container */
+                height: 100vh;
+                /* Adjust as needed */
+
+            }
+
+            /* Row 11 */
+
+            #Row11 {
+                padding-top: 80px;
+                padding-bottom: 80px;
+                background-color: #F5F0E9;
+            }
+
+            #row11r1 {
+                text-align: center;
+            }
+
+            #row11r1 h1 {
+                color: #C0812A;
+            }
+
+            #row11r1 p {
+
+
+                padding-top: 20px;
+                color: #86837f;
+            }
+
+            #Row11r2r2 {
+                padding-top: 30px;
+            }
+
+            #Row11r2 {
+                padding-top: 30px;
+            }
+
+            #r11c1 {
+                padding-left: 10px;
+            }
+
+            #r11col2 {
+                padding-top: 30px;
+            }
+
+            #r11c2 {
+                padding-left: 10px;
+            }
+
+            #rowi {
+                width: 400px;
+                height: 250px;
+
+            }
+
+            #rowt {
+
+                background-color: white;
+                margin-left: 10px;
+                padding-right: 20px;
+                padding-top: 20px;
+                width: 400px;
+                height: 200px;
+
+            }
+
+            #rowt h6 {
+                text-align: start;
+                padding-left: 10px;
+            }
+
+            #rowt p {
+                color: #707070;
+                padding-left: 10px;
+                padding-right: 30px;
+                text-align: start;
+                font-size: small;
+            }
+
+            #p2 {
+                color: #C0812A;
+                font-size: medium;
+                padding-right: 20px;
+            }
+
+            #rowi1 {
+                width: 400px;
+                height: 250px;
+
+            }
+
+            #rowt2 {
+                background-color: white;
+                margin-left: 10px;
+                padding-right: 20px;
+                padding-top: 20px;
+                width: 400px;
+                height: 200px;
+            }
+
+            #rowt2 h6 {
+                text-align: start;
+                padding-left: 10px;
+            }
+
+            #rowt2 p {
+                color: #707070;
+                padding-left: 10px;
+                padding-right: 30px;
+                text-align: start;
+                font-size: small;
+            }
+
+            /* Row 12 */
+
+            #r12i {
+                border-radius: 90px;
+                width: 100px;
+                height: 100px;
+            }
+
+            #Row12 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                text-align: center;
+            }
+
+
+
+            #r11c1t p {
+                text-align: center;
+                font-size: small;
+                padding-left: 20px;
+                padding-right: 10px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t p b {
+                color: #0B0F14;
+            }
+
+            #row12c2 {
+                text-align: center;
+                padding-top: 30px;
+            }
+
+            #r11c1t1 p {
+                text-align: center;
+                font-size: small;
+                padding-left: 30px;
+                padding-right: 20px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t1 p b {
+                color: #0B0F14;
+            }
+
+            #row12c3 {
+                padding-top: 30px;
+            }
+
+            #r11c1t2 p {
+                text-align: center;
+                font-size: small;
+                padding-left: 30px;
+                padding-right: 20px;
+                color: #707070;
+                padding-top: 25px;
+            }
+
+            #r11c1t2 p b {
+                color: #0B0F14;
+            }
+
+            /* Row 13 */
+            #flexcontainer {
+                height: 100%;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background: radial-gradient(rgba(17, 17, 17, 0.7), rgba(40, 40, 40, 0.6)), url(assets/Row13.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #flexcontainer div {
+                background-color: rgba(0, 0, 0, 0.8);
+                padding-top: 50px;
+                font-size: smaller;
+                padding-bottom: 50px;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 5px;
+                width: 389px;
+                height: 200px;
+            }
+
+            #flexcontainer div p {
+                padding-left: 30px;
+                padding-right: 30px;
+                text-align: center;
+                color: #707070;
+            }
+
+            #flexcontainer div h4 {
+                color: #C0812A;
+            }
+
+            #flexcontainer div h6 {
+                color: white;
+                font-size: medium;
+            }
+
+            /* Row 14 */
+            #Row14 {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #Row14 p {
+                color: #707070;
+            }
+
+            #r14c1 {
+                text-align: center;
+            }
+
+            #r14c1 h3 {
+                font-size: xx-large;
+                font-weight: bold;
+            }
+
+            #r14c2 {
+                text-align: center;
+                padding-top: 50px;
+
+            }
+
+            #r14c2 h3 {
+                font-size: xx-large;
+                font-weight: bold;
+            }
+
+            #r14c3 {
+                text-align: center;
+                padding-top: 50px;
+
+            }
+
+            #r14c3 h3 {
+                font-size: xx-large;
+                font-weight: bold;
+            }
+
+            #r14c4 {
+                text-align: center;
+                padding-top: 50px;
+
+            }
+
+            #r14c4 h3 {
+                font-size: xx-large;
+                font-weight: bold;
+            }
+
+            /* Row 15 */
+            #Row15i {
+                background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(assets/Row15.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 44 0px;
+                height: 400px;
+
+            }
+
+            #Row15c {
+                background-color: #C0812A;
+                color: white;
+                padding-top: 80px;
+            }
+
+            #Row15c h1 {
+                font-size: 35px;
+
+            }
+
+            #Row15c p {
+                font-size: medium;
+            }
+
+            #name {
+                width: 400px;
+                height: 40px;
+            }
+
+            #email {
+                width: 400px;
+                height: 40px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #Row15c button {
+                margin-bottom: 120px;
+                margin-top: 10px;
+                background-color: #DFB752;
+                width: 200px;
+                height: 50px;
+            }
+
+            #Row15c button:hover {
+                color: black;
+                background-color: rgb(216, 179, 85);
+
+            }
+
+            /* Row 16 */
+            #Row16 {
+                padding-top: 100px;
+                padding-bottom: 60px;
+                text-align: center;
+            }
+
+            #logo {
+                color: #C0812A;
+                font-size: 35px;
+                padding-bottom: 20px;
+            }
+
+
+
+            #Row16 p {
+                color: #707070;
+                padding-bottom: 40px;
+            }
+
+            /* Row 17 */
+            #Row17 {
+                width: 100%;
+                height: 100%;
+            }
+
+            #map {
+                width: 400px;
+                height: 200px;
+                border: 0;
+            }
+
+            /* footer */
+
+            #fc1 {
+                text-align: center;
+                padding-top: 30px;
+
+            }
+
+            #fborder {
+                border-bottom: 1px solid #E5E5E5;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            #fr2 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                text-align: center;
+                color: #707070;
+            }
+
+            #fr2c1 {
+
+                font-size: 14px;
+                text-align: center;
+                padding-bottom: 15px;
+
+
+            }
+
+            #fr2c2 {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            #fr2c3 {
+                font-size: 14px;
+                text-align: center;
+                letter-spacing: 10px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/carousel-1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/carousel-2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/carousel-3.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid">
+
+        <div id="mySidenav" class="sidenav fixed-top">
+            <a href="#" id="about"><i class="fa-sharp fa-solid fa-cart-shopping"></i>&nbsp &nbsp &nbsp PURCHASE
+                THEME</a>
+            <a href="#" id="blog"><i class="fa-regular fa-folder"></i>&nbsp &nbsp ALL TEMPLATES</a>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg  fixed-top navbar-dark" style="background-color: black;">
+                <a class="navbar-brand" href="#" id="nav3">
+                    <img src="assets/logo-white.png">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item" id="bottb">
+                            <a class="nav-link" href="#paragraph">THE HOTEL</a>
+                        </li>
+                        <li class="nav-item" id="bottb">
+                            <a class="nav-link" href="#row2m">ROOMS</a>
+                        </li>
+                        <li class="nav-item" id="bottb">
+                            <a class="nav-link" href="#row4">FACILITIES</a>
+                        </li>
+                        <li class="nav-item" id="bottb">
+                            <a class="nav-link" href="#demo">GALLERY</a>
+                        </li>
+                        <li class="nav-item" id="bottb">
+                            <a class="nav-link" href="#Row11">OFFERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Row16">LOCATION</a>
+                        </li>
+
+                        <li class="nav-item" style="margin-top: 2px;">
+
+                            <a href="#">
+                                <button type="button" class="btn  btn-light btn-sm" id="btn1">
+                                    <i class="fa-solid fa-bookmark"></i></i> Book Now
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Row 1 -->
+        <div class="row" id="paragraph">
+            <div class="col-lg-6 col-md-6 col-12" id="row1">
+                <p>PROVIDING QUALITY SERVICES SINCE '98.</p>
+                <h1 id="heading">
+                    Redefines the luxury hospitality experience.
+                </h1><br>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged.
+                </p><br>
+
+                <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                    unknown printer took a galley of type scrambled it to make a type specimen book.
+                </p>
+
+                <button type="button" class="btn rounded-pill" id="btn2">READ MORE &nbsp ></button>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12" id="row1i">
+                <img src="assets/Row1Img.png" id="row1img">
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+
+        <div class="row" id="row2m">
+            <div class="row" id="row2">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <h1 id="r2head">ROOMS & SUITS</h1>
+                    <p id="r2para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the
+                        <br>industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type
+                        <br>and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-4 col-12" id="r2col1">
+                    <div class="card">
+                        <div class="inner">
+                            <img class="card-img-top" src="assets/Row 2 IMG.jpg" alt="Card image">
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-secondary btn-sm " id="r2btn">FROM $50 / PER
+                                NIGHT</button>
+                            <h6 class="card-title">CLASSIC DOUBLE ROOM</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. LoremIpsum has been the industry's.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12" id="r2col2">
+                    <div class="card">
+                        <div class="inner">
+                            <img class="card-img-top" src="assets/Row 2 IMG.2jpg.jpg" alt="Card image">
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-secondary btn-sm " id="r2btn">FROM $30 / PER
+                                NIGHT</button>
+                            <h6 class="card-title">ONE BEDROOM SUITE</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12" id="r2col3">
+                    <div class="card">
+                        <div class="inner">
+                            <img class="card-img-top" src="assets/Row 2 IMG.3jpg.jpg" alt="Card image">
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-secondary btn-sm " id="r2btn">FROM $25 / PER
+                                NIGHT</button>
+                            <h6 class="card-title">EMPIRE STATE VIEW SUITE</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of theprinting and typesetting
+                                industry. Lorem Ipsum has been the industry's.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row" id="row3">
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assets/Row3i1.jpg" id="row3i">
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assets/Row3i12.jpg" id="row3i">
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assets/Row3i13.jpg" id="row3i">
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assets/Row3i14.jpg" id="row3i">
+            </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="row" id="row4">
+            <div class="col-lg-12 col-md-12 col-12">
+                <h1>HOTEL FACILITIES</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the <br> industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type <br> and scrambled it to make a type specimen book.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="flex-container">
+                <div class="flex-item" id="fi-1"></div>
+                <div class="flex-item">SWIMING/GYM</div>
+                <div class="flex-item">SPORTS CLUB</div>
+                <div class="flex-item">PICK-UP</div>
+                <div class="flex-item">RESTAURENT BAR</div>
+                <div class="flex-item" id="fi-2"></div>
+
+            </div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="row" id="row6">
+            <div class="col-lg-6 col-md-6 col-12" id="r6c1">
+                <img src="assets/Row6img.jpg" id="row6img">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12" id="r6c2">
+                <h4>The world class</h4>
+                <h3>sports and golf club.</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged.
+                    Lorem Ipsum is simply dummy text.
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-12 col-12"></div>
+        </div>
+
+        <!-- Row 7 -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/Row7i1.jpg" class="d-block" style="width:33%" alt="First slide">
+                        <img src="assets/Row7i2.jpg" class="d-block" style="width:33%" alt="Second slide">
+                        <img src="assets/Row7i3.jpg" class="d-block" style="width:33%" alt="Third slide">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/Row7i3.jpg" class="d-block" style="width:33%" alt="First slide">
+                        <img src="assets/Row7i4.jpg" class="d-block" style="width:33%" alt="Second slide">
+                        <img src="assets/Row7i5.jpg" class="d-block" style="width:33%" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Row 8 -->
+        <div class="row" id="row8">
+            <div class="col-lg-1 col-md-12 col-12"></div>
+            <div class="col-lg-2 col-md-6 col-12" id="row8c">
+                <img src="assets/Row8i1.png">
+                <h6>GREAT ENVIRONMENT</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12" id="row8c">
+                <img src="assets/Row8i2.png">
+                <h6>FREE BREAKFAST</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12" id="row8c">
+                <img src="assets/Row8i3.png">
+                <h6>CLEAN EVERYDAY</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-lg-2 cpl-md-6 col-12" id="row8c">
+                <img src="assets/Row8i4.png">
+                <h6>ENJOY NIGHTLIFE</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12"></div>
+
+        </div>
+
+        <!-- ROw 9 -->
+        <div class="row" id="Row9">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="assets/Row9.png">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <p>
+                    We offers the perfect setting for <br> rare moments of romance.
+                </p>
+            </div>
+        </div>
+
+        <!-- Row 10 -->
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12" id="Row10c1">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12" id="Row10c2">
+                        <h1>Luxury Services</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the standard dummy text.</p>
+                    </div>
+                </div>
+
+                <div class="row" id="Row10R">
+                    <div class="col-lg-6 col-md-6 col-12" id="Row10c">
+                        <h4>01. Exclusive interior</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12" id="Row10c">
+                        <h4>02. Wellness & spa</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" id="Row10R">
+                    <div class="col-lg-6 col-md-6 col-12" id="Row10c">
+                        <h4>03. Bar & restaurant</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12" id="Row10c">
+                        <h4>04. Parking & security</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12" id="r10img">
+
+            </div>
+
+        </div>
+
+        <!-- Row 11 -->
+
+        <div class="row" id="Row11">
+            <div class="row" id="row11r1">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <h1>HOTEL OFFERS</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" id="Row11r2">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12" id="r11c1">
+                            <img src="assets/roww11i1.jpg" id="rowi">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12" id="rowt">
+                            <h6>HONEYMOON PACKAGE</h6>
+                            <p>Lorem Ipsum is simply text dummy text of the printing and typesetting industry.
+                                an Lorem Ipsum has been.
+                            </p>
+
+                            <h6><u id="p2">PER PERSON / $2000</u></h6>
+                        </div>
+                    </div>
+
+                    <div class="row" id="Row11r2r2">
+                        <div class="col-lg-6 col-md-6 col-12" id="r11c1">
+                            <img src="assets/roww11i2.jpg" id="rowi">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12" id="rowt">
+                            <h6>COCKTAIL PACKAGE</h6>
+                            <p>Lorem Ipsum is simply text dummy text of the printing and typesetting industry.
+                                an Lorem Ipsum has been.
+                            </p>
+
+                            <h6><u id="p2">PER PERSON / $199</u></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12" id="r11col2">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12" id="r11c2">
+                            <img src="assets/roww11i3.jpg" id="rowi1">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12" id="rowt2">
+                            <h6>SURFING PACKAGE</h6>
+                            <p>Lorem Ipsum is simply text dummy text of the printing and typesetting industry.
+                                an Lorem Ipsum has been.
+                            </p>
+
+                            <h6><u id="p2">PER PERSON / $299</u></h6>
+                        </div>
+                    </div>
+
+                    <div class="row" id="Row11r2r2">
+                        <div class="col-lg-6 col-md-6 col-12" id="r11c2">
+                            <img src="assets/roww11i4.jpg" id="rowi1">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12" id="rowt2">
+                            <h6>THE LAMB PACKAGE</h6>
+                            <p>Lorem Ipsum is simply text dummy text of the printing and typesetting industry.
+                                an Lorem Ipsum has been.
+                            </p>
+
+                            <h6><u id="p2">PER PERSON / $300</u></h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Row 12 -->
+        <div class="row" id="Row12">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="row" id="r12c1">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <img src="assets/Row12i1.jpg" id="r12i">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12" id="r11c1t">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, printer.
+                            <br><br><b>MARK STRINGER, USA</b>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="row" id="row12c2">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <img src="assets/Row12i2.jpg" id="r12i">
+                    </div>
+                </div>
+                <div class="row" id="r11c1t1">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, printer.
+                        <br><br><b>SHOKO MUGIKURA, CANADA</b>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="row" id="row12c3">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <img src="assets/Row12i3.jpg" id="r12i">
+                    </div>
+                </div>
+                <div class="row" id="r11c1t2">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, printer.
+                        <br><br><b>PAUL SCRIVENS, INDIA</b>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Row 13 -->
+        <div class="row">
+            <div class="flex-container" id="flexcontainer">
+                <div>
+                    <h6>A HOLIDAY TO REMEMBER</h6>
+                    <h4>Discover the World</h4>
+                    <p>Lorem Ipsum is simply text of the printing and
+                        typesetting industry. Lorem Ipsum has been industry's standard dummy text since.
+                    </p>
+                </div>
+                <div>
+                    <h6>A HOLIDAY TO REMEMBER</h6>
+                    <h4>Relax and Enjoy</h4>
+                    <p>Lorem Ipsum is simply text of the printing and
+                        typesetting industry. Lorem Ipsum has been industry's standard dummy text since.
+                    </p>
+                </div>
+                <div>
+                    <h6>A HOLIDAY TO REMEMBER</h6>
+                    <h4>Discover the World</h4>
+                    <p>Lorem Ipsum is simply text of the printing and
+                        typesetting industry. Lorem Ipsum has been industry's standard dummy text since.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Row 14 -->
+        <div class="row" id="Row14">
+            <div class="col-lg-4 col-md-6 col-12" id="r14c1">
+                <h3>1500</h3>
+                <p>Honeymoon Couple</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12" id="r14c2">
+                <h3>1400</h3>
+                <p>Opening Hours</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12" id="r14c3">
+                <h3>1250</h3>
+                <p>Satisfaction Guests</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12" id="r14c4">
+                <h3>1600</h3>
+                <p>Will Come Back</p>
+            </div>
+        </div>
+
+        <!-- Row 15 -->
+        <div class="row">
+            <div class="col-lg-7" id="Row15i">
+                <!-- <img src="assets/Row15.jpg" > -->
+            </div>
+            <div class="col-lg-5" id="Row15c">
+                <h1>Book Now!</h1>
+                <h3>Limited rooms available!</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy
+                    text.</p>
+                <input type="text" class="form-control form-control" placeholder="Your Name" id="name">
+                <input type="email" class="form-control form-control" placeholder="Your Email" id="email">
+                <button type="button" class="btn">CHEK AVAILABILITY</button>
+            </div>
+        </div>
+
+        <!-- Row 16 -->
+        <div class="row" id="Row16">
+            <div class="col-lg-4 col-md-6 col-12" id="r16c1">
+                <i class="fa-solid fa-location-dot" id="logo"></i>
+                <h6><b>Contact Address</b></h6>
+                <p>301 The Greenhouse, Custard,<br>
+                    Factory, London, E2 8DY.
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+                <i class="fa-solid fa-mobile" id="logo"></i>
+                <h6><b>Call Us Today!</b></h6>
+                <p>(M) +44 (0) 123 456 7890<br>
+                    (O) +44 (0) 123 456 7890
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12" id="r16c2">
+                <i class="fa-regular fa-envelope" id="logo"></i>
+                <h6><b>Email</b></h6>
+                <p>no-reply@domain.com<br>
+                    help@domain.com
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12" id="r16c4">
+                <i class="fa-regular fa-clock" id="logo"></i>
+                <h6><b>Working Hours</b></h6>
+                <p>Mon to Sat - 9 AM to 11 PM<br>
+                    Sunday 10 AM to 6 PM
+                </p>
+            </div>
+        </div>
+
+        <!-- Row 17 -->
+        <div class="row" id="Row17">
+            <p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119064.900275948!2d78.99010793294912!3d21.161225997003935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710428192599!5m2!1sen!2sin"
+                    id="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12" id="fc1">
+                    <img src="assets/footerlogo.png">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-1"></div>
+                <div class="col-lg-10 col-md-10 col-10" id="fborder">
+
+                </div>
+                <div class="col-lg-1 col-md-1 col-1"></div>
+            </div>
+
+            <div class="row" id="fr2">
+                <div class="col-lg-5 col-md-12 col-12" id="fr2c1">
+                    <p>Privacy Policy &nbsp Terms and Conditions &nbsp Legal </p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12" id="fr2c2">
+                    <p>
+                        © 2016 LeadGen is proudly powered by ThemeZaa.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12" id="fr2c3">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
